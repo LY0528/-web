@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/cinema.css">
 </head>
-<header>
-    <div class="title clearfix">
-        <a href="index.html?" class="fl"></a>
-        <p>影院热映</p>
-    </div>
-</header>
-<article>
-    <div class="cinema_info" id="cinema_info">
-        <a href="#">
-            <p class="cinema_name"></p>
-            <p class="cinema_address"></p>
-        </a>
-    </div>
-    <div class="poster_info">
-        <ul class="movie_img clearfix" id="poster">
-            <li><img src="" alt=""></li>
-        </ul>
-    </div>
-    <ul class="movie_hall" id="movie_hall">
-        <li>
-            <span class="time"></span>
-            <span class="hall"></span>
-            <span class="price"></span>
-            <a href="#" class="ticket_url">选票地址</a>
-        </li>
-    </ul>
-</article>
 
 <body>
+    <header>
+        <div class="title clearfix">
+            <a href="index.html?" class="fl"></a>
+            <p>影院热映</p>
+        </div>
+    </header>
+    <article>
+        <div class="cinema_info" id="cinema_info">
+            <a href="#">
+                <p class="cinema_name"></p>
+                <p class="cinema_address"></p>
+            </a>
+        </div>
+        <div class="poster_info">
+            <ul class="movie_img clearfix" id="poster">
+                <li><img src="" alt=""></li>
+            </ul>
+        </div>
+        <ul class="movie_hall" id="movie_hall">
+            <li>
+                <span class="time"></span>
+                <span class="hall"></span>
+                <span class="price"></span>
+                <a href="#" class="ticket_url">选票地址</a>
+            </li>
+        </ul>
+    </article>
 </body>
 <script src="lib/fixScreen.js"></script>
 <script src="lib/jquery/jquery.js"></script>
@@ -62,8 +62,8 @@
         <span class="time">{{value.time}}</span>
         <span>
             <span class="language">{{value.language}}</span>
-            <span class="type">{{value.type}}</span>
-            <span class="hall">{{value.hall}}</span>
+        <span class="type">{{value.type}}</span>
+        <span class="hall">{{value.hall}}</span>
         </span>
         <a href="{{#value.ticket_url}}" class="ticket_url fr">购票地址</a>
         <span class="price fr">￥{{value.price}}</span>
